@@ -5,13 +5,13 @@
 class Slacktokens < Formula
   desc "Extract Slack workspace tokens and authentication cookies from the desktop app"
   homepage "https://github.com/hishamkaram/slacktokens"
-  version "0.5.0"
+  version "0.6.0"
   license "GPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hishamkaram/slacktokens/releases/download/v0.5.0/slacktokens_v0.5.0_darwin_amd64.tar.gz"
-      sha256 "4475632cda3abcf95b9bd85d03770cf1d3d968b34c636e64b638f8940401e4c8"
+      url "https://github.com/hishamkaram/slacktokens/releases/download/v0.6.0/slacktokens_v0.6.0_darwin_amd64.tar.gz"
+      sha256 "2f3aa227ef9bb6b55eb9e14bfd410b6f0b3e0cde00ac4cd099d87ad5d0439092"
 
       define_method(:install) do
         bin.install "slacktokens"
@@ -19,8 +19,8 @@ class Slacktokens < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hishamkaram/slacktokens/releases/download/v0.5.0/slacktokens_v0.5.0_darwin_arm64.tar.gz"
-      sha256 "4dbc6c0db5df7b26744fe6f2077a1d35d1028c69a65540836df9ab202ffe5ef3"
+      url "https://github.com/hishamkaram/slacktokens/releases/download/v0.6.0/slacktokens_v0.6.0_darwin_arm64.tar.gz"
+      sha256 "6a4e62eaab5b1beb0133af3536c1961752d3ab0026ed19ca4e17968b8f694ffd"
 
       define_method(:install) do
         bin.install "slacktokens"
@@ -31,16 +31,16 @@ class Slacktokens < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hishamkaram/slacktokens/releases/download/v0.5.0/slacktokens_v0.5.0_linux_amd64.tar.gz"
-      sha256 "61912d7f68b6154e43dfc320f2ae3956650b7d919688978125b9b4ed72735a25"
+      url "https://github.com/hishamkaram/slacktokens/releases/download/v0.6.0/slacktokens_v0.6.0_linux_amd64.tar.gz"
+      sha256 "abe15fd7c7cf37f1325dc707afe95afdd772f9d6f0d5fc58e87f58f6dd9356a3"
       define_method(:install) do
         bin.install "slacktokens"
         bin.install "slacktokens-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hishamkaram/slacktokens/releases/download/v0.5.0/slacktokens_v0.5.0_linux_arm64.tar.gz"
-      sha256 "35403386f3269559ab1a42e1ed5e3c7db6d29e72dc0c1a0783e83a206b76ad24"
+      url "https://github.com/hishamkaram/slacktokens/releases/download/v0.6.0/slacktokens_v0.6.0_linux_arm64.tar.gz"
+      sha256 "e2903f11b6489bacd22530e651d3abf47c08235fa80dac4bc6ef43b90dcd5bc9"
       define_method(:install) do
         bin.install "slacktokens"
         bin.install "slacktokens-mcp"
